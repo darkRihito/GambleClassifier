@@ -1,0 +1,100 @@
+<html>
+
+    <head>        
+        <title>Aplikasi Klasifikasi Ball</title>
+    </head>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+    </style>
+
+    <body>
+
+        <h1>Klasifikasi data Iris:</h1>
+
+        <form action="{{ url_for('predict') }}" method="post">
+
+                <label for="p1" >p1</label>
+                <input type="text" name="p1" placeholder="p1" required="required"/>
+
+                <label for="p2" >p2</label>
+                <input type="text" name="p2" placeholder="p2" required="required"/>
+
+                <label for="p3" >p3</label>
+                <input type="text" name="p3" placeholder="p3" required="required"/>
+
+                <label for="p4" >p4</label>
+                <input type="text" name="p4" placeholder="p4" required="required"/>
+
+                <label for="p5" >p5</label>
+                <input type="text" name="p5" placeholder="p5" required="required"/>
+
+                <label for="p6" >p6</label>
+                <input type="text" name="p6" placeholder="p6" required="required"/>
+
+                <label for="p7" >p7</label>
+                <input type="text" name="p7" placeholder="p7" required="required"/>
+
+                <label for="p8" >p8</label>
+                <input type="text" name="p8" placeholder="p8" required="required"/>
+
+                <button type="submit">PREDICT!</button>
+            </form>
+        </main>
+
+        <section>
+            <table>
+                <tr>
+                    <td><p>p1</p></td>
+                    <td>:</td>
+                    <td>{{ p1}}</td>
+                </tr>
+                <tr>
+                    <td><p>p2</p></td>
+                    <td>:</td>
+                    <td>{{ p2}}</td>
+                </tr>
+                <tr>
+                    <td><p>p3</p></td>
+                    <td>:</td>
+                    <td>{{ p3}}</td>
+                </tr>
+                <tr>
+                    <td><p>p4</p></td>
+                    <td>:</td>
+                    <td>{{ p4}}</td>
+                </tr>
+                <tr>
+                    <td><p>p5</p></td>
+                    <td>:</td>
+                    <td>{{ p5}}</td>
+                </tr>
+                <tr>
+                    <td><p>p6</p></td>
+                    <td>:</td>
+                    <td>{{ p6}}</td>
+                </tr>
+                <tr>
+                    <td><p>p7</p></td>
+                    <td>:</td>
+                    <td>{{ p7}}</td>
+                </tr>
+                <tr>
+                    <td><p>p8</p></td>
+                    <td>:</td>
+                    <td>{{ p8}}</td>
+                </tr>
+            </table>
+            
+		    <h1>Result</h1>
+            <h2> {{ hasil }}</h2>  
+            </div>
+                
+            </div>           
+        </section>
+    </body>
+</html>
